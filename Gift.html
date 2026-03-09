@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Special Gift</title>
+<style>
+body{
+    font-family: Arial;
+    text-align:center;
+    background:#ffe6f0;
+    padding:50px;
+}
+#message{
+    display:none;
+    font-size:24px;
+    color:#cc0066;
+    margin-top:30px;
+}
+button{
+    padding:10px 20px;
+    font-size:18px;
+    background:#ff4da6;
+    color:white;
+    border:none;
+    border-radius:8px;
+}
+input{
+    padding:10px;
+    font-size:16px;
+}
+</style>
+</head>
+
+<body>
+
+<h2>📖 A Special Gift For My Wife</h2>
+<p>Press the button and enter the password to see your Mother's Day surprise.</p>
+
+<input type="password" id="pass" placeholder="Enter password">
+<br><br>
+<button onclick="checkPassword()">Open My Gift</button>
+
+<div id="message">
+❤️ Happy Mother's Day My Love ❤️  
+<br><br>
+Today I want to promise something very important to you and our family.  
+<br><br>
+🍺 I WILL QUIT DRINKING BEER.  
+<br><br>
+Thank you for being an amazing wife and mother.  
+You are the greatest blessing in my life.  
+</div>
+
+<script>
+function checkPassword(){
+    var password = document.getElementById("pass").value;
+    if(password === "mylove"){
+        document.getElementById("message").style.display="block";
+    }else{
+        alert("Wrong password, try again ❤️");
+    }
+}
+</script>
+
+</body>
+</html>
